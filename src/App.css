@@ -1,0 +1,84 @@
+.container{
+    margin: 40px 20vw;
+}
+
+main{
+    display: grid;
+}
+
+.Cards{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));/* responsive */
+    gap: 4rem;
+}
+
+.Cards li{
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 250px;
+    margin: 0 auto; /* Centra el elemento en su contenedor */
+}
+
+.Cards img {
+    width: 100%; /* Ocupa todo el contenedor */
+    height: 250px; /* Establece una altura fija para todas las imágenes */
+    border-radius: 8px;
+}
+
+.Cards li p {
+    font-size: 1.2rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.error{
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 10px; /* Espacio entre el formulario y el mensaje */
+    text-align: center; /* Centrar el texto */
+}
+/* removing default style of button */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    margin: 5px;
+    padding: 8px 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+  
+.button:hover {
+    background-color: #2ecc71;
+}
+
+.input {
+    font-size: 0.9rem;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border-radius: 6px;
+}
